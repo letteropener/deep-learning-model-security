@@ -1,0 +1,96 @@
+Legitimate accuracy: 0.976000022888
+JSMA accuracy:0.148999993503
+FGSM accuracy:0.396999999881
+Base Iterative accuracy:0.0659999972209
+Elastic Net accuracy:0.0439999978989
+DeepFool accuracy:0.0419999979436
+C & W  accuracy:0.0439999982715
+*******End of Epoch***********
+
+VAT accuracy:0.853999984264
+*******End of Epoch***********
+
+Legitimate accuracy: 0.980000019073
+JSMA accuracy:0.150999994576
+FGSM accuracy:0.446999981999
+Base Iterative accuracy:0.0899999983609
+Elastic Net accuracy:0.0419999992475
+DeepFool accuracy:0.0399999985471
+C & W  accuracy:0.0419999985024
+*******End of Epoch***********
+
+VAT accuracy:0.863999980688
+*******End of Epoch***********
+
+Legitimate accuracy: 0.982000017166
+JSMA accuracy:0.165999997407
+FGSM accuracy:0.486999976635
+Base Iterative accuracy:0.111999995261
+Elastic Net accuracy:0.0349999988452
+DeepFool accuracy:0.0319999992847
+C & W  accuracy:0.0349999988452
+*******End of Epoch***********
+
+VAT accuracy:0.885000014305
+*******End of Epoch***********
+
+Legitimate accuracy: 0.979000020027
+JSMA accuracy:0.179999993742
+FGSM accuracy:0.498999974132
+Base Iterative accuracy:0.123999997228
+Elastic Net accuracy:0.0439999973401
+DeepFool accuracy:0.040999997966
+C & W  accuracy:0.0439999984577
+*******End of Epoch***********
+
+VAT accuracy:0.871000003815
+*******End of Epoch***********
+
+Legitimate accuracy: 0.977000021935
+JSMA accuracy:0.245999993384
+FGSM accuracy:0.505999973416
+Base Iterative accuracy:0.159999994934
+Elastic Net accuracy:0.0509999984875
+DeepFool accuracy:0.0479999978095
+C & W  accuracy:0.0539999986067
+*******End of Epoch***********
+
+VAT accuracy:0.843999999762
+*******End of Epoch***********
+
+Legitimate accuracy: 0.978000020981
+JSMA accuracy:0.24699999392
+FGSM accuracy:0.515999984741
+Base Iterative accuracy:0.117999997735
+Elastic Net accuracy:0.0489999981597
+DeepFool accuracy:0.0479999981821
+C & W  accuracy:0.0499999979511
+*******End of Epoch***********
+
+VAT accuracy:0.870000010729
+*******End of Epoch***********
+
+Legitimate accuracy: 0.979000020027
+JSMA accuracy:0.253999990225
+FGSM accuracy:0.52699996531
+Base Iterative accuracy:0.101999998093
+Elastic Net accuracy:0.0549999976531
+DeepFool accuracy:0.0519999982789
+C & W  accuracy:0.0579999977723
+*******End of Epoch***********
+
+VAT accuracy:0.86099999547
+*******End of Epoch***********
+
+Legitimate accuracy: 0.977000021935
+JSMA accuracy:0.283999986947
+FGSM accuracy:0.544999974966
+Base Iterative accuracy:0.166999994218
+Elastic Net accuracy:0.0449999988079
+DeepFool accuracy:0.0449999984354
+C & W  accuracy:0.0459999987856
+*******End of Epoch***********
+
+VAT accuracy:0.868000012636
+*******End of Epoch***********
+

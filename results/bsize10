@@ -1,0 +1,49 @@
+Extracting /tmp/t10k-labels-idx1-ubyte.gz
+X_train shape: (6000, 28, 28, 1)
+X_test shape: (1000, 28, 28, 1)
+evaluate 1
+[INFO 2017-11-21 19:50:36,527 cleverhans] Epoch 0 took 1.67226004601 seconds
+Test accuracy on legitimate examples: 0.9590
+[INFO 2017-11-21 19:50:37,846 cleverhans] Epoch 1 took 1.2243680954 seconds
+Test accuracy on legitimate examples: 0.9560
+[INFO 2017-11-21 19:50:39,162 cleverhans] Epoch 2 took 1.22226715088 seconds
+Test accuracy on legitimate examples: 0.9590
+[INFO 2017-11-21 19:50:40,479 cleverhans] Epoch 3 took 1.22035098076 seconds
+Test accuracy on legitimate examples: 0.9690
+[INFO 2017-11-21 19:50:41,802 cleverhans] Epoch 4 took 1.22987484932 seconds
+Test accuracy on legitimate examples: 0.9540
+[INFO 2017-11-21 19:50:43,125 cleverhans] Epoch 5 took 1.22769498825 seconds
+Test accuracy on legitimate examples: 0.9700
+[INFO 2017-11-21 19:50:43,221 cleverhans] Completed model training.
+Test accuracy on FGSM adversarial examples: 0.1300
+
+Test accuracy on EN adversarial examples: 0.0240
+
+Repeating the process, using adversarial training
+evaluate 2
+[INFO 2017-11-21 19:54:43,966 cleverhans] Epoch 0 took 205.986428976 seconds
+Test accuracy on legitimate examples: 0.9310
+Test accuracy on FGSM adversarial examples: 0.3010
+Test accuracy on EN adversarial examples: 0.0560
+[INFO 2017-11-21 19:58:44,686 cleverhans] Epoch 1 took 206.238494873 seconds
+Test accuracy on legitimate examples: 0.9520
+Test accuracy on FGSM adversarial examples: 0.3050
+Test accuracy on EN adversarial examples: 0.0340
+[INFO 2017-11-21 20:02:45,310 cleverhans] Epoch 2 took 206.157207012 seconds
+Test accuracy on legitimate examples: 0.9470
+Test accuracy on FGSM adversarial examples: 0.3340
+Test accuracy on EN adversarial examples: 0.0420
+[INFO 2017-11-21 20:06:45,899 cleverhans] Epoch 3 took 206.114074945 seconds
+Test accuracy on legitimate examples: 0.9450
+Test accuracy on FGSM adversarial examples: 0.4170
+Test accuracy on EN adversarial examples: 0.0480
+[INFO 2017-11-21 20:10:51,420 cleverhans] Epoch 4 took 210.324179888 seconds
+Test accuracy on legitimate examples: 0.9540
+Test accuracy on FGSM adversarial examples: 0.4410
+Test accuracy on EN adversarial examples: 0.0390
+[INFO 2017-11-21 20:14:52,146 cleverhans] Epoch 5 took 206.276599884 seconds
+Test accuracy on legitimate examples: 0.9560
+Test accuracy on FGSM adversarial examples: 0.3810
+Test accuracy on EN adversarial examples: 0.0360
+[INFO 2017-11-21 20:15:26,642 cleverhans] Completed model training.
+

@@ -1,0 +1,54 @@
+2017-11-18 13:47:05.446962: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2017-11-18 13:47:05.868273: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2017-11-18 13:47:05.868489: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.2155
+pciBusID: 0000:01:00.0
+totalMemory: 3.94GiB freeMemory: 3.87GiB
+2017-11-18 13:47:05.868500: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:01:00.0, compute capability: 5.2)
+[INFO 2017-11-18 13:47:10,016 cleverhans] Epoch 0 took 2.9519329071 seconds
+[INFO 2017-11-18 13:47:12,660 cleverhans] Epoch 1 took 2.48757815361 seconds
+[INFO 2017-11-18 13:47:15,304 cleverhans] Epoch 2 took 2.48899793625 seconds
+[INFO 2017-11-18 13:47:17,944 cleverhans] Epoch 3 took 2.48560094833 seconds
+[INFO 2017-11-18 13:47:20,582 cleverhans] Epoch 4 took 2.48096179962 seconds
+[INFO 2017-11-18 13:47:23,213 cleverhans] Epoch 5 took 2.4778470993 seconds
+[INFO 2017-11-18 13:47:23,365 cleverhans] Completed model training.
+[INFO 2017-11-18 13:50:50,286 cleverhans] Epoch 0 took 169.155476093 seconds
+[INFO 2017-11-18 13:54:12,794 cleverhans] Epoch 1 took 172.402932167 seconds
+[INFO 2017-11-18 13:57:35,399 cleverhans] Epoch 2 took 172.438205004 seconds
+[INFO 2017-11-18 14:00:57,856 cleverhans] Epoch 3 took 172.356102943 seconds
+[INFO 2017-11-18 14:04:20,109 cleverhans] Epoch 4 took 172.199050903 seconds
+[INFO 2017-11-18 14:07:42,442 cleverhans] Epoch 5 took 172.251396179 seconds
+[INFO 2017-11-18 14:08:12,406 cleverhans] Completed model training.
+Extracting /tmp/train-images-idx3-ubyte.gz
+Extracting /tmp/train-labels-idx1-ubyte.gz
+Extracting /tmp/t10k-images-idx3-ubyte.gz
+Extracting /tmp/t10k-labels-idx1-ubyte.gz
+X_train shape: (60000, 28, 28, 1)
+X_test shape: (10000, 28, 28, 1)
+Test accuracy on legitimate examples: 0.9880
+Test accuracy on legitimate examples: 0.9892
+Test accuracy on legitimate examples: 0.9916
+Test accuracy on legitimate examples: 0.9916
+Test accuracy on legitimate examples: 0.9927
+Test accuracy on legitimate examples: 0.9929
+Test accuracy on BIM adversarial examples: 0.0059
+
+Repeating the process, using adversarial training
+Test accuracy on legitimate examples: 0.9787
+Test accuracy on FGSM adversarial examples: 0.7338
+Test accuracy on BIM adversarial examples: 0.4904
+Test accuracy on legitimate examples: 0.9834
+Test accuracy on FGSM adversarial examples: 0.8167
+Test accuracy on BIM adversarial examples: 0.6506
+Test accuracy on legitimate examples: 0.9854
+Test accuracy on FGSM adversarial examples: 0.8801
+Test accuracy on BIM adversarial examples: 0.7802
+Test accuracy on legitimate examples: 0.9856
+Test accuracy on FGSM adversarial examples: 0.9140
+Test accuracy on BIM adversarial examples: 0.8492
+Test accuracy on legitimate examples: 0.9878
+Test accuracy on FGSM adversarial examples: 0.9322
+Test accuracy on BIM adversarial examples: 0.8751
+Test accuracy on legitimate examples: 0.9869
+Test accuracy on FGSM adversarial examples: 0.9391
+Test accuracy on BIM adversarial examples: 0.8908

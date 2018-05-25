@@ -1,0 +1,102 @@
+2017-12-05 18:47:06.687687: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2017-12-05 18:47:07.103038: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2017-12-05 18:47:07.103222: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.2155
+pciBusID: 0000:01:00.0
+totalMemory: 3.94GiB freeMemory: 3.87GiB
+2017-12-05 18:47:07.103234: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:01:00.0, compute capability: 5.2)
+Successfully downloaded train-images-idx3-ubyte.gz 9912422 bytes.
+Extracting /tmp/train-images-idx3-ubyte.gz
+Successfully downloaded train-labels-idx1-ubyte.gz 28881 bytes.
+Extracting /tmp/train-labels-idx1-ubyte.gz
+Successfully downloaded t10k-images-idx3-ubyte.gz 1648877 bytes.
+Extracting /tmp/t10k-images-idx3-ubyte.gz
+Successfully downloaded t10k-labels-idx1-ubyte.gz 4542 bytes.
+Extracting /tmp/t10k-labels-idx1-ubyte.gz
+X_train shape: (6000, 28, 28, 1)
+X_test shape: (1000, 28, 28, 1)
+[INFO 2017-12-05 18:47:12,058 cleverhans] Epoch 0 took 1.73375582695 seconds
+Test accuracy on legitimate examples: 0.7510
+[INFO 2017-12-05 18:47:12,279 cleverhans] Epoch 1 took 0.179761171341 seconds
+Test accuracy on legitimate examples: 0.8450
+[INFO 2017-12-05 18:47:12,477 cleverhans] Epoch 2 took 0.180290937424 seconds
+Test accuracy on legitimate examples: 0.8860
+[INFO 2017-12-05 18:47:12,677 cleverhans] Epoch 3 took 0.18168091774 seconds
+Test accuracy on legitimate examples: 0.9020
+[INFO 2017-12-05 18:47:12,876 cleverhans] Epoch 4 took 0.180568933487 seconds
+Test accuracy on legitimate examples: 0.9210
+[INFO 2017-12-05 18:47:13,074 cleverhans] Epoch 5 took 0.179644107819 seconds
+Test accuracy on legitimate examples: 0.9290
+[INFO 2017-12-05 18:47:13,092 cleverhans] Completed model training.
+[INFO 2017-12-05 18:47:25,824 cleverhans] 49 out of 1000 becomes adversarial examples at iteration 50
+Test accuracy on DeepFool adversarial examples: 0.0470
+
+Repeating the process, using adversarial training
+[INFO 2017-12-05 18:47:27,658 cleverhans] 1024 out of 1024 becomes adversarial examples at iteration 3
+[INFO 2017-12-05 18:47:28,485 cleverhans] 1024 out of 1024 becomes adversarial examples at iteration 4
+[INFO 2017-12-05 18:47:29,877 cleverhans] 1024 out of 1024 becomes adversarial examples at iteration 7
+[INFO 2017-12-05 18:47:32,916 cleverhans] 1024 out of 1024 becomes adversarial examples at iteration 15
+[INFO 2017-12-05 18:47:38,085 cleverhans] 1024 out of 1024 becomes adversarial examples at iteration 25
+[INFO 2017-12-05 18:47:44,347 cleverhans] 1024 out of 1024 becomes adversarial examples at iteration 30
+[INFO 2017-12-05 18:47:44,403 cleverhans] Epoch 0 took 17.4339499474 seconds
+Test accuracy on legitimate examples: 0.6970
+Test accuracy on FGSM adversarial examples: 0.0930
+[INFO 2017-12-05 18:47:47,095 cleverhans] 34 out of 1000 becomes adversarial examples at iteration 10
+Test accuracy on DeepFool adversarial examples: 0.1440
+[INFO 2017-12-05 18:47:55,917 cleverhans] 1024 out of 1024 becomes adversarial examples at iteration 43
+[INFO 2017-12-05 18:48:06,029 cleverhans] 1024 out of 1024 becomes adversarial examples at iteration 48
+[INFO 2017-12-05 18:48:16,821 cleverhans] 1015 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:48:27,801 cleverhans] 1005 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:48:39,061 cleverhans] 987 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:48:50,654 cleverhans] 919 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:48:50,709 cleverhans] Epoch 1 took 63.5997738838 seconds
+Test accuracy on legitimate examples: 0.8440
+Test accuracy on FGSM adversarial examples: 0.0870
+[INFO 2017-12-05 18:48:53,368 cleverhans] 0 out of 1000 becomes adversarial examples at iteration 10
+Test accuracy on DeepFool adversarial examples: 0.7270
+[INFO 2017-12-05 18:49:05,155 cleverhans] 827 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:49:17,050 cleverhans] 772 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:49:29,101 cleverhans] 658 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:49:41,283 cleverhans] 498 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:49:53,472 cleverhans] 509 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:50:05,645 cleverhans] 514 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:50:05,700 cleverhans] Epoch 2 took 72.3174948692 seconds
+Test accuracy on legitimate examples: 0.8650
+Test accuracy on FGSM adversarial examples: 0.0960
+[INFO 2017-12-05 18:50:08,391 cleverhans] 0 out of 1000 becomes adversarial examples at iteration 10
+Test accuracy on DeepFool adversarial examples: 0.8150
+[INFO 2017-12-05 18:50:20,677 cleverhans] 552 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:50:32,877 cleverhans] 601 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:50:45,136 cleverhans] 584 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:50:57,430 cleverhans] 525 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:51:09,625 cleverhans] 557 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:51:21,799 cleverhans] 587 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:51:21,856 cleverhans] Epoch 3 took 73.4508411884 seconds
+Test accuracy on legitimate examples: 0.8870
+Test accuracy on FGSM adversarial examples: 0.1000
+[INFO 2017-12-05 18:51:24,577 cleverhans] 0 out of 1000 becomes adversarial examples at iteration 10
+Test accuracy on DeepFool adversarial examples: 0.8080
+[INFO 2017-12-05 18:51:36,725 cleverhans] 643 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:51:48,936 cleverhans] 658 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:52:01,121 cleverhans] 701 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:52:13,267 cleverhans] 699 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:52:25,341 cleverhans] 764 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:52:37,398 cleverhans] 770 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:52:37,453 cleverhans] Epoch 4 took 72.860918045 seconds
+Test accuracy on legitimate examples: 0.9030
+Test accuracy on FGSM adversarial examples: 0.1130
+[INFO 2017-12-05 18:52:40,141 cleverhans] 0 out of 1000 becomes adversarial examples at iteration 10
+Test accuracy on DeepFool adversarial examples: 0.7360
+[INFO 2017-12-05 18:52:52,081 cleverhans] 783 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:53:04,131 cleverhans] 816 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:53:16,180 cleverhans] 802 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:53:28,189 cleverhans] 800 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:53:40,215 cleverhans] 804 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:53:52,193 cleverhans] 813 out of 1024 becomes adversarial examples at iteration 50
+[INFO 2017-12-05 18:53:52,250 cleverhans] Epoch 5 took 72.0947880745 seconds
+Test accuracy on legitimate examples: 0.9210
+Test accuracy on FGSM adversarial examples: 0.1310
+[INFO 2017-12-05 18:53:54,969 cleverhans] 0 out of 1000 becomes adversarial examples at iteration 10
+Test accuracy on DeepFool adversarial examples: 0.7810
+[INFO 2017-12-05 18:53:54,983 cleverhans] Completed model training.
+

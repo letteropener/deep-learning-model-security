@@ -1,0 +1,654 @@
+2017-11-30 16:58:46.696389: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2017-11-30 16:58:47.118645: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2017-11-30 16:58:47.118897: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.2155
+pciBusID: 0000:01:00.0
+totalMemory: 3.94GiB freeMemory: 3.87GiB
+2017-11-30 16:58:47.118919: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:01:00.0, compute capability: 5.2)
+[INFO 2017-11-30 16:58:49,150 cleverhans] Epoch 0 took 0.752082109451 seconds
+[INFO 2017-11-30 16:58:49,346 cleverhans] Epoch 1 took 0.175498962402 seconds
+[INFO 2017-11-30 16:58:49,541 cleverhans] Epoch 2 took 0.176588058472 seconds
+[INFO 2017-11-30 16:58:49,736 cleverhans] Epoch 3 took 0.176035165787 seconds
+[INFO 2017-11-30 16:58:49,934 cleverhans] Epoch 4 took 0.178848028183 seconds
+[INFO 2017-11-30 16:58:50,132 cleverhans] Epoch 5 took 0.178018093109 seconds
+[INFO 2017-11-30 16:58:50,150 cleverhans] Completed model training.
+[DEBUG 2017-11-30 17:02:29,549 cleverhans]  Elastic Mean successful distortion: 1.412
+[INFO 2017-11-30 17:26:48,892 cleverhans] Epoch 0 took 1445.07153296 seconds
+[DEBUG 2017-11-30 17:31:26,694 cleverhans]  Elastic Mean successful distortion: 1.358
+[INFO 2017-11-30 17:58:12,032 cleverhans] Epoch 1 took 1599.71453595 seconds
+[DEBUG 2017-11-30 18:02:42,684 cleverhans]  Elastic Mean successful distortion: 1.465
+[INFO 2017-11-30 18:29:56,242 cleverhans] Epoch 2 took 1628.30345011 seconds
+[DEBUG 2017-11-30 18:34:40,983 cleverhans]  Elastic Mean successful distortion: 1.577
+[INFO 2017-11-30 19:03:37,528 cleverhans] Epoch 3 took 1730.83852696 seconds
+[DEBUG 2017-11-30 19:08:30,220 cleverhans]  Elastic Mean successful distortion: 1.581
+[INFO 2017-11-30 19:38:05,872 cleverhans] Epoch 4 took 1767.44091892 seconds
+[DEBUG 2017-11-30 19:43:08,076 cleverhans]  Elastic Mean successful distortion: 1.57
+[INFO 2017-11-30 20:13:36,949 cleverhans] Epoch 5 took 1819.95967484 seconds
+[DEBUG 2017-11-30 20:18:53,317 cleverhans]  Elastic Mean successful distortion: 1.655
+[INFO 2017-11-30 20:19:01,356 cleverhans] Completed model training.
+2017-11-30 20:19:01.365039: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:01:00.0, compute capability: 5.2)
+[INFO 2017-11-30 20:19:03,169 cleverhans] Epoch 0 took 0.320524930954 seconds
+[INFO 2017-11-30 20:19:03,900 cleverhans] Epoch 1 took 0.175650119781 seconds
+[INFO 2017-11-30 20:19:04,682 cleverhans] Epoch 2 took 0.174758911133 seconds
+[INFO 2017-11-30 20:19:05,471 cleverhans] Epoch 3 took 0.175545930862 seconds
+[INFO 2017-11-30 20:19:06,269 cleverhans] Epoch 4 took 0.177346944809 seconds
+[INFO 2017-11-30 20:19:07,061 cleverhans] Epoch 5 took 0.175645112991 seconds
+[INFO 2017-11-30 20:19:07,669 cleverhans] Completed model training.
+[DEBUG 2017-11-30 20:22:53,155 cleverhans]  Elastic Mean successful distortion: 1.436
+[INFO 2017-11-30 20:48:03,038 cleverhans] Epoch 0 took 1494.23752403 seconds
+***********************************
+**********Starting Test 1**********
+***********************************
+Extracting /tmp/train-images-idx3-ubyte.gz
+Extracting /tmp/train-labels-idx1-ubyte.gz
+Extracting /tmp/t10k-images-idx3-ubyte.gz
+Extracting /tmp/t10k-labels-idx1-ubyte.gz
+X_train shape: (6000, 28, 28, 1)
+X_test shape: (1000, 28, 28, 1)
+Test accuracy on legitimate examples: 0.7370
+Test accuracy on legitimate examples: 0.8490
+Test accuracy on legitimate examples: 0.8830
+Test accuracy on legitimate examples: 0.9110
+Test accuracy on legitimate examples: 0.9220
+Test accuracy on legitimate examples: 0.9420
+#####Starting attacks on clean model#####
+Clean test accuracy on JSMA adversarial examples: 0.0310
+Clean test accuracy on FGSM adversarial examples: 0.0400
+Clean test accuracy on BIM adversarial examples: 0.0320
+Clean test accuracy on EN adversarial examples: 0.0400
+Clean test accuracy on DF adversarial examples: 0.0400
+Clean test accuracy on VAT adversarial examples: 0.7370
+
+Repeating the process, using adversarial training
+
+#####Evaluate trained model#####
+Test accuracy on JSMA adversarial examples: 0.1080
+Test accuracy on FGSM adversarial examples: 0.1180
+Test accuracy on BIM adversarial examples: 0.0780
+Test accuracy on EN adversarial examples: 0.1490
+Test accuracy on DF adversarial examples: 0.1340
+Test accuracy on VAT adversarial examples: 0.6060
+
+Test accuracy on JSMA adversarial examples: 0.0620
+Test accuracy on FGSM adversarial examples: 0.1150
+Test accuracy on BIM adversarial examples: 0.0670
+Test accuracy on EN adversarial examples: 0.1310
+Test accuracy on DF adversarial examples: 0.1290
+Test accuracy on VAT adversarial examples: 0.6750
+
+Test accuracy on JSMA adversarial examples: 0.0790
+Test accuracy on FGSM adversarial examples: 0.1360
+Test accuracy on BIM adversarial examples: 0.0840
+Test accuracy on EN adversarial examples: 0.1470
+Test accuracy on DF adversarial examples: 0.1380
+Test accuracy on VAT adversarial examples: 0.6860
+
+Test accuracy on JSMA adversarial examples: 0.0630
+Test accuracy on FGSM adversarial examples: 0.1210
+Test accuracy on BIM adversarial examples: 0.0810
+Test accuracy on EN adversarial examples: 0.1230
+Test accuracy on DF adversarial examples: 0.1190
+Test accuracy on VAT adversarial examples: 0.7050
+
+Test accuracy on JSMA adversarial examples: 0.0640
+Test accuracy on FGSM adversarial examples: 0.1240
+Test accuracy on BIM adversarial examples: 0.0930
+Test accuracy on EN adversarial examples: 0.1070
+Test accuracy on DF adversarial examples: 0.1050
+Test accuracy on VAT adversarial examples: 0.7390
+
+Test accuracy on JSMA adversarial examples: 0.1050
+Test accuracy on FGSM adversarial examples: 0.1190
+Test accuracy on BIM adversarial examples: 0.0810
+Test accuracy on EN adversarial examples: 0.1130
+Test accuracy on DF adversarial examples: 0.1110
+Test accuracy on VAT adversarial examples: 0.7560
+
+***********************************
+**********Starting Test 2**********
+***********************************
+Extracting /tmp/train-images-idx3-ubyte.gz
+Extracting /tmp/train-labels-idx1-ubyte.gz
+Extracting /tmp/t10k-images-idx3-ubyte.gz
+Extracting /tmp/t10k-labels-idx1-ubyte.gz
+X_train shape: (6000, 28, 28, 1)
+X_test shape: (1000, 28, 28, 1)
+Test accuracy on legitimate examples: 0.6950
+Test accuracy on legitimate examples: 0.8280
+Test accuracy on legitimate examples: 0.8820
+Test accuracy on legitimate examples: 0.8930
+Test accuracy on legitimate examples: 0.9160
+Test accuracy on legitimate examples: 0.9240
+#####Starting attacks on clean model#####
+Clean test accuracy on JSMA adversarial examples: 0.0360
+Clean test accuracy on FGSM adversarial examples: 0.0470
+Clean test accuracy on BIM adversarial examples: 0.0390
+Clean test accuracy on EN adversarial examples: 0.0540
+Clean test accuracy on DF adversarial examples: 0.0490
+Clean test accuracy on VAT adversarial examples: 0.7610
+
+Repeating the process, using adversarial training
+
+#####Evaluate trained model#####
+Test accuracy on JSMA adversarial examples: 0.0720
+Test accuracy on FGSM adversarial examples: 0.1480
+Test accuracy on BIM adversarial exa[DEBUG 2017-11-30 20:52:40,018 cleverhans]  Elastic Mean successful distortion: 1.398
+[INFO 2017-11-30 21:20:44,459 cleverhans] Epoch 1 took 1677.71465182 seconds
+[DEBUG 2017-11-30 21:25:44,543 cleverhans]  Elastic Mean successful distortion: 1.627
+[INFO 2017-11-30 21:55:00,600 cleverhans] Epoch 2 took 1750.11235404 seconds
+[DEBUG 2017-11-30 21:59:59,262 cleverhans]  Elastic Mean successful distortion: 1.705
+[INFO 2017-11-30 22:30:30,776 cleverhans] Epoch 3 took 1825.33654213 seconds
+[DEBUG 2017-11-30 22:35:38,271 cleverhans]  Elastic Mean successful distortion: 1.757
+[INFO 2017-11-30 23:06:54,113 cleverhans] Epoch 4 took 1869.72470307 seconds
+[DEBUG 2017-11-30 23:12:20,799 cleverhans]  Elastic Mean successful distortion: 1.779
+[INFO 2017-11-30 23:44:41,099 cleverhans] Epoch 5 took 1933.02691889 seconds
+[DEBUG 2017-11-30 23:50:02,308 cleverhans]  Elastic Mean successful distortion: 1.784
+[INFO 2017-11-30 23:50:09,764 cleverhans] Completed model training.
+2017-11-30 23:50:09.771493: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:01:00.0, compute capability: 5.2)
+[INFO 2017-11-30 23:50:12,813 cleverhans] Epoch 0 took 0.489006996155 seconds
+[INFO 2017-11-30 23:50:14,169 cleverhans] Epoch 1 took 0.176223993301 seconds
+[INFO 2017-11-30 23:50:15,597 cleverhans] Epoch 2 took 0.17636179924 seconds
+[INFO 2017-11-30 23:50:17,039 cleverhans] Epoch 3 took 0.175127029419 seconds
+[INFO 2017-11-30 23:50:18,577 cleverhans] Epoch 4 took 0.175915002823 seconds
+[INFO 2017-11-30 23:50:20,036 cleverhans] Epoch 5 took 0.175357103348 seconds
+[INFO 2017-11-30 23:50:21,305 cleverhans] Completed model training.
+[DEBUG 2017-11-30 23:54:21,152 cleverhans]  Elastic Mean successful distortion: 1.427
+[INFO 2017-12-01 00:21:15,523 cleverhans] Epoch 0 took 1589.69294715 seconds
+[DEBUG 2017-12-01 00:26:16,897 cleverhans]  Elastic Mean successful distortion: 1.355
+[INFO 2017-12-01 00:55:04,602 cleverhans] Epoch 1 took 1718.77740598 seconds
+[DEBUG 2017-12-01 00:59:58,571 cleverhans]  Elastic Mean successful distortion: 1.603
+[INFO 2017-12-01 01:29:50,684 cleverhans] Epoch 2 took 1785.18966007 seconds
+[DEBUG 2017-12-01 01:34:57,381 cleverhans]  Elastic Mean successful distortion: 1.707
+[INFO 2017-12-01 02:06:45,955 cleverhans] Epoch 3 took 1900.78583097 seconds
+[DEBUG 2017-12-01 02:12:15,348 cleverhans]  Elastic Mean successful distortion: 1.78
+[INFO 2017-12-01 02:44:39,678 cleverhans] Epoch 4 took 1936.31473398 seconds
+mples: 0.0760
+Test accuracy on EN adversarial examples: 0.1360
+Test accuracy on DF adversarial examples: 0.1440
+Test accuracy on VAT adversarial examples: 0.6640
+
+Test accuracy on JSMA adversarial examples: 0.0910
+Test accuracy on FGSM adversarial examples: 0.2340
+Test accuracy on BIM adversarial examples: 0.1100
+Test accuracy on EN adversarial examples: 0.1450
+Test accuracy on DF adversarial examples: 0.1350
+Test accuracy on VAT adversarial examples: 0.6860
+
+Test accuracy on JSMA adversarial examples: 0.0680
+Test accuracy on FGSM adversarial examples: 0.2540
+Test accuracy on BIM adversarial examples: 0.0810
+Test accuracy on EN adversarial examples: 0.1090
+Test accuracy on DF adversarial examples: 0.1060
+Test accuracy on VAT adversarial examples: 0.7470
+
+Test accuracy on JSMA adversarial examples: 0.0670
+Test accuracy on FGSM adversarial examples: 0.3070
+Test accuracy on BIM adversarial examples: 0.0650
+Test accuracy on EN adversarial examples: 0.0770
+Test accuracy on DF adversarial examples: 0.0770
+Test accuracy on VAT adversarial examples: 0.7850
+
+Test accuracy on JSMA adversarial examples: 0.0660
+Test accuracy on FGSM adversarial examples: 0.3150
+Test accuracy on BIM adversarial examples: 0.0670
+Test accuracy on EN adversarial examples: 0.0840
+Test accuracy on DF adversarial examples: 0.0820
+Test accuracy on VAT adversarial examples: 0.7840
+
+Test accuracy on JSMA adversarial examples: 0.0730
+Test accuracy on FGSM adversarial examples: 0.4040
+Test accuracy on BIM adversarial examples: 0.0670
+Test accuracy on EN adversarial examples: 0.0820
+Test accuracy on DF adversarial examples: 0.0780
+Test accuracy on VAT adversarial examples: 0.7960
+
+***********************************
+**********Starting Test 3**********
+***********************************
+Extracting /tmp/train-images-idx3-ubyte.gz
+Extracting /tmp/train-labels-idx1-ubyte.gz
+Extracting /tmp/t10k-images-idx3-ubyte.gz
+Extracting /tmp/t10k-labels-idx1-ubyte.gz
+X_train shape: (6000, 28, 28, 1)
+X_test shape: (1000, 28, 28, 1)
+Test accuracy on legitimate examples: 0.7040
+Test accuracy on legitimate examples: 0.8440
+Test accuracy on legitimate examples: 0.8850
+Test accuracy on legitimate examples: 0.8980
+Test accuracy on legitimate examples: 0.9180
+Test accuracy on legitimate examples: 0.9240
+#####Starting attacks on clean model#####
+Clean test accuracy on JSMA adversarial examples: 0.0350
+Clean test accuracy on FGSM adversarial examples: 0.0500
+Clean test accuracy on BIM adversarial examples: 0.0400
+Clean test accuracy on EN adversarial examples: 0.0580
+Clean test accuracy on DF adversarial examples: 0.0590
+Clean test accuracy on VAT adversarial examples: 0.7400
+
+Repeating the process, using adversarial training
+
+#####Evaluate trained model#####
+Test accuracy on JSMA adversarial examples: 0.0880
+Test accuracy on FGSM adversarial examples: 0.1310
+Test accuracy on BIM adversarial examples: 0.0610
+Test accuracy on EN adversarial examples: 0.1320
+Test accuracy on DF adversarial examples: 0.1290
+Test accuracy on VAT adversarial examples: 0.6670
+
+Test accuracy on JSMA adversarial examples: 0.0790
+Test accuracy on FGSM adversarial examples: 0.2530
+Test accuracy on BIM adversarial examples: 0.1020
+Test accuracy on EN adversarial examples: 0.1360
+Test accuracy on DF adversarial examples: 0.1250
+Test accuracy on VAT adversarial examples: 0.7020
+
+Test accuracy on JSMA adversarial examples: 0.0790
+Test accuracy on FGSM adversarial examples: 0.2900
+Test accuracy on BIM adversarial examples: 0.1110
+Test accuracy on EN adversarial examples: 0.0970
+Test accuracy on DF adversarial examples: 0.0960
+Test accuracy on VAT adversarial examples: 0.7360
+
+Test accuracy on JSMA adversarial examples: 0.0700
+Test accuracy on FGSM adversarial examples: 0.3440
+Test accuracy on BIM adversarial examples: 0.1390
+Test accuracy on EN adversarial examples: 0.0870
+Test accuracy on DF adversarial examples: 0.0860
+Test accuracy on VAT adversarial examples: 0.7780
+
+Test accuracy on JSMA adversarial examples: 0.0860
+Test accuracy on FGSM adversarial examples: 0.3790
+Test accuracy on BIM adversarial examples: 0.1[DEBUG 2017-12-01 02:50:17,461 cleverhans]  Elastic Mean successful distortion: 1.852
+[INFO 2017-12-01 03:23:01,172 cleverhans] Epoch 5 took 1955.13292885 seconds
+[DEBUG 2017-12-01 03:28:41,073 cleverhans]  Elastic Mean successful distortion: 1.888
+[INFO 2017-12-01 03:28:49,284 cleverhans] Completed model training.
+2017-12-01 03:28:49.291333: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:01:00.0, compute capability: 5.2)
+[INFO 2017-12-01 03:28:54,056 cleverhans] Epoch 0 took 0.711339950562 seconds
+[INFO 2017-12-01 03:28:56,256 cleverhans] Epoch 1 took 0.178952932358 seconds
+[INFO 2017-12-01 03:28:58,628 cleverhans] Epoch 2 took 0.176270008087 seconds
+[INFO 2017-12-01 03:29:01,028 cleverhans] Epoch 3 took 0.177263021469 seconds
+[INFO 2017-12-01 03:29:03,411 cleverhans] Epoch 4 took 0.176351070404 seconds
+[INFO 2017-12-01 03:29:05,847 cleverhans] Epoch 5 took 0.175985813141 seconds
+[INFO 2017-12-01 03:29:08,086 cleverhans] Completed model training.
+[DEBUG 2017-12-01 03:33:17,657 cleverhans]  Elastic Mean successful distortion: 1.454
+[DEBUG 2017-12-01 03:34:26,039 cleverhans]  Elastic Mean successful distortion: 0.1747
+[DEBUG 2017-12-01 03:36:24,699 cleverhans]  Elastic Mean successful distortion: 0.6532
+[DEBUG 2017-12-01 03:41:59,733 cleverhans]  Elastic Mean successful distortion: 0.9893
+[DEBUG 2017-12-01 03:46:39,557 cleverhans]  Elastic Mean successful distortion: 1.247
+[DEBUG 2017-12-01 03:52:17,661 cleverhans]  Elastic Mean successful distortion: 1.396
+[DEBUG 2017-12-01 03:57:18,409 cleverhans]  Elastic Mean successful distortion: 1.46
+[INFO 2017-12-01 04:01:48,788 cleverhans] Epoch 0 took 1683.79536581 seconds
+[DEBUG 2017-12-01 04:06:38,774 cleverhans]  Elastic Mean successful distortion: 1.402
+[DEBUG 2017-12-01 04:07:23,017 cleverhans]  Elastic Mean successful distortion: 1.559
+[DEBUG 2017-12-01 04:12:38,456 cleverhans]  Elastic Mean successful distortion: 1.664
+[DEBUG 2017-12-01 04:17:35,080 cleverhans]  Elastic Mean successful distortion: 1.682
+[DEBUG 2017-12-01 04:22:41,499 cleverhans]  Elastic Mean successful distortion: 1.719
+[DEBUG 2017-12-01 04:27:52,219 cleverhans]  Elastic Mean successful distortion: 1.818
+[DEBUG 2017-12-01 04:33:04,074 cleverhans]  Elastic Mean successful distortion: 1.716
+[INFO 2017-12-01 04:37:52,981 cleverhans] Epoch 1 took 1863.35816884 seconds
+[DEBUG 2017-12-01 04:42:43,186 cleverhans]  Elastic Mean successful distortion: 1.594
+[DEBUG 2017-12-01 04:43:25,447 cleverhans]  Elastic Mean successful distortion: 1.774
+[DEBUG 2017-12-01 04:48:33,220 cleverhans]  Elastic Mean successful distortion: 1.761
+[DEBUG 2017-12-01 04:53:39,289 cleverhans]  Elastic Mean successful distortion: 1.861
+[DEBUG 2017-12-01 04:58:39,140 cleverhans]  Elastic Mean successful distortion: 1.905
+[DEBUG 2017-12-01 05:03:55,885 cleverhans]  Elastic Mean successful distortion: 1.909
+[DEBUG 2017-12-01 05:09:18,937 cleverhans]  Elastic Mean successful distortion: 1.945
+[INFO 2017-12-01 05:14:09,805 cleverhans] Epoch 2 took 1877.524616 seconds
+[DEBUG 2017-12-01 05:19:14,319 cleverhans]  Elastic Mean successful distortion: 1.762
+[DEBUG 2017-12-01 05:19:56,864 cleverhans]  Elastic Mean successful distortion: 2.035
+[DEBUG 2017-12-01 05:25:21,619 cleverhans]  Elastic Mean successful distortion: 1.992
+[DEBUG 2017-12-01 05:30:39,965 cleverhans]  Elastic Mean successful distortion: 2.035
+[DEBUG 2017-12-01 05:36:06,028 cleverhans]  Elastic Mean successful distortion: 2.018
+[DEBUG 2017-12-01 05:41:37,530 cleverhans]  Elastic Mean successful distortion: 1.954
+[DEBUG 2017-12-01 05:47:08,030 cleverhans]  Elastic Mean successful distortion: 1.999
+[INFO 2017-12-01 05:52:09,418 cleverhans] Epoch 3 took 1965.68750286 seconds
+[DEBUG 2017-12-01 05:57:24,960 cleverhans]  Elastic Mean successful distortion: 1.868
+[DEBUG 2017-12-01 05:58:07,234 cleverhans]  Elastic Mean successful distortion: 2.068
+[DEBUG 2017-12-01 06:03:40,509 cleverhans]  Elastic Mean successful distortion: 2.126
+[DEBUG 2017-12-01 06:09:08,933 cleverhans]  Elastic Mean successful distortion: 2.135
+[DEBUG 2017-12-01 06:14:42,901 cleverhans]  Elastic Mean successful distortion: 2.143
+[DEBUG 2017-12-01 06:20:21,172 cleverhans]  Elastic Mean successful distortion: 2.087
+[DEBUG 2017-12-01 06:26:00,017 cleverhans]  Elastic Mean successful distortion: 2.151
+[INFO 2017-12-01 06:31:13,166 cleverhans] Epoch 4 took 2019.22233486 seconds
+[DEBUG 2017-12-01 06:36:44,534 cleverhans]  Elastic Mean successful distortion: 1.953
+[DEBUG 2017-12-01 06:37:27,536 cleverhans]  Elastic Mean successful distortion: 2.156
+[DEBUG 2017-12-01 06:43:11,761 cleverhans]  Elastic Mean successful distortion: 2.183
+[DEBUG 2017-12-01 06:48:53,734 cleverhans]  Elastic Mean successful distortion: 2.174
+[DEBUG 2017-12-01 06:54:40,670 cleverhans]  Elastic Mean successful distortion: 2.245
+[DEBUG 2017-12-01 07:00:29,004 cleverhans]  Elastic Mean successful distortion: 2.194
+[DEBUG 2017-12-01 07:06:16,258 cleverhans]  Elastic Mean successful distortion: 2.222
+[INFO 2017-12-01 07:11:28,494 cleverhans] Epoch 5 took 2074.39040089 seconds
+[DEBUG 2017-12-01 07:17:02,877 cleverhans]  Elastic Mean successful distortion: 2.014
+[INFO 2017-12-01 07:17:12,793 cleverhans] Completed model training.
+2017-12-01 07:17:12.800326: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:01:00.0, compute capability: 5.2)
+[INFO 2017-12-01 07:17:19,199 cleverhans] Epoch 0 took 0.931844949722 seconds
+[INFO 2017-12-01 07:17:22,187 cleverhans] Epoch 1 took 0.177950143814 seconds
+[INFO 2017-12-01 07:17:25,402 cleverhans] Epoch 2 took 0.175712108612 seconds
+[INFO 2017-12-01 07:17:28,671 cleverhans] Epoch 3 took 0.174839019775 seconds
+[INFO 2017-12-01 07:17:31,947 cleverhans] Epoch 4 took 0.175554037094 seconds
+[INFO 2017-12-01 07:17:35,222 cleverhans] Epoch 5 took 0.175541877747 seconds
+[INFO 2017-12-01 07:17:38,342 cleverhans] Completed model training.
+340
+Test accuracy on EN adversarial examples: 0.0760
+Test accuracy on DF adversarial examples: 0.0760
+Test accuracy on VAT adversarial examples: 0.7860
+
+Test accuracy on JSMA adversarial examples: 0.0970
+Test accuracy on FGSM adversarial examples: 0.4260
+Test accuracy on BIM adversarial examples: 0.1560
+Test accuracy on EN adversarial examples: 0.0680
+Test accuracy on DF adversarial examples: 0.0660
+Test accuracy on VAT adversarial examples: 0.8050
+
+***********************************
+**********Starting Test 4**********
+***********************************
+Extracting /tmp/train-images-idx3-ubyte.gz
+Extracting /tmp/train-labels-idx1-ubyte.gz
+Extracting /tmp/t10k-images-idx3-ubyte.gz
+Extracting /tmp/t10k-labels-idx1-ubyte.gz
+X_train shape: (6000, 28, 28, 1)
+X_test shape: (1000, 28, 28, 1)
+Test accuracy on legitimate examples: 0.7580
+Test accuracy on legitimate examples: 0.8570
+Test accuracy on legitimate examples: 0.8800
+Test accuracy on legitimate examples: 0.8980
+Test accuracy on legitimate examples: 0.9140
+Test accuracy on legitimate examples: 0.9260
+#####Starting attacks on clean model#####
+Clean test accuracy on JSMA adversarial examples: 0.0390
+Clean test accuracy on FGSM adversarial examples: 0.0520
+Clean test accuracy on BIM adversarial examples: 0.0390
+Clean test accuracy on EN adversarial examples: 0.0530
+Clean test accuracy on DF adversarial examples: 0.0530
+Clean test accuracy on VAT adversarial examples: 0.7480
+
+Repeating the process, using adversarial training
+
+#####Evaluate trained model#####
+Test accuracy on JSMA adversarial examples: 0.0840
+Test accuracy on FGSM adversarial examples: 0.1070
+Test accuracy on BIM adversarial examples: 0.0710
+Test accuracy on EN adversarial examples: 0.1300
+Test accuracy on DF adversarial examples: 0.1150
+Test accuracy on VAT adversarial examples: 0.6580
+
+Test accuracy on JSMA adversarial examples: 0.0770
+Test accuracy on FGSM adversarial examples: 0.2050
+Test accuracy on BIM adversarial examples: 0.0680
+Test accuracy on EN adversarial examples: 0.1120
+Test accuracy on DF adversarial examples: 0.1110
+Test accuracy on VAT adversarial examples: 0.7130
+
+Test accuracy on JSMA adversarial examples: 0.0760
+Test accuracy on FGSM adversarial examples: 0.2740
+Test accuracy on BIM adversarial examples: 0.1100
+Test accuracy on EN adversarial examples: 0.0990
+Test accuracy on DF adversarial examples: 0.0970
+Test accuracy on VAT adversarial examples: 0.7320
+
+Test accuracy on JSMA adversarial examples: 0.0940
+Test accuracy on FGSM adversarial examples: 0.3070
+Test accuracy on BIM adversarial examples: 0.1090
+Test accuracy on EN adversarial examples: 0.0790
+Test accuracy on DF adversarial examples: 0.0760
+Test accuracy on VAT adversarial examples: 0.7690
+
+Test accuracy on JSMA adversarial examples: 0.0700
+Test accuracy on FGSM adversarial examples: 0.3510
+Test accuracy on BIM adversarial examples: 0.1250
+Test accuracy on EN adversarial examples: 0.0620
+Test accuracy on DF adversarial examples: 0.0630
+Test accuracy on VAT adversarial examples: 0.8230
+
+Test accuracy on JSMA adversarial examples: 0.0890
+Test accuracy on FGSM adversarial examples: 0.3790
+Test accuracy on BIM adversarial examples: 0.1590
+Test accuracy on EN adversarial examples: 0.0670
+Test accuracy on DF adversarial examples: 0.0670
+Test accuracy on VAT adversarial examples: 0.7900
+
+***********************************
+**********Starting Test 5**********
+***********************************
+Extracting /tmp/train-images-idx3-ubyte.gz
+Extracting /tmp/train-labels-idx1-ubyte.gz
+Extracting /tmp/t10k-images-idx3-ubyte.gz
+Extracting /tmp/t10k-labels-idx1-ubyte.gz
+X_train shape: (6000, 28, 28, 1)
+X_test shape: (1000, 28, 28, 1)
+Test accuracy on legitimate examples: 0.7370
+Test accuracy on legitimate examples: 0.8450
+Test accuracy on legitimate examples: 0.8930
+Test accuracy on legitimate examples: 0.9070
+Test accuracy on legitimate examples: 0.9230
+Test accuracy on legitimate examples: 0.9310
+#####Starting attacks on clean model#####
+Clean test accuracy on JSMA adversarial examples: 0.0350
+Clean test accuracy on FGSM adversarial examples[DEBUG 2017-12-01 07:21:42,426 cleverhans]  Elastic Mean successful distortion: 1.46
+[DEBUG 2017-12-01 07:22:58,660 cleverhans]  Elastic Mean successful distortion: 0.1327
+[DEBUG 2017-12-01 07:24:58,638 cleverhans]  Elastic Mean successful distortion: 0.6041
+[DEBUG 2017-12-01 07:30:00,933 cleverhans]  Elastic Mean successful distortion: 0.8753
+[DEBUG 2017-12-01 07:34:17,470 cleverhans]  Elastic Mean successful distortion: 1.202
+[DEBUG 2017-12-01 07:39:06,741 cleverhans]  Elastic Mean successful distortion: 1.373
+[DEBUG 2017-12-01 07:43:46,002 cleverhans]  Elastic Mean successful distortion: 1.416
+[INFO 2017-12-01 07:48:14,289 cleverhans] Epoch 0 took 1560.81104708 seconds
+[DEBUG 2017-12-01 07:52:53,789 cleverhans]  Elastic Mean successful distortion: 1.423
+[DEBUG 2017-12-01 07:53:40,167 cleverhans]  Elastic Mean successful distortion: 1.569
+[DEBUG 2017-12-01 07:58:36,890 cleverhans]  Elastic Mean successful distortion: 1.616
+[DEBUG 2017-12-01 08:03:27,148 cleverhans]  Elastic Mean successful distortion: 1.66
+[DEBUG 2017-12-01 08:08:26,664 cleverhans]  Elastic Mean successful distortion: 1.719
+[DEBUG 2017-12-01 08:13:26,754 cleverhans]  Elastic Mean successful distortion: 1.8
+[DEBUG 2017-12-01 08:18:34,165 cleverhans]  Elastic Mean successful distortion: 1.725
+[INFO 2017-12-01 08:23:17,727 cleverhans] Epoch 1 took 1813.646209 seconds
+[DEBUG 2017-12-01 08:28:15,279 cleverhans]  Elastic Mean successful distortion: 1.623
+[DEBUG 2017-12-01 08:29:01,467 cleverhans]  Elastic Mean successful distortion: 1.782
+[DEBUG 2017-12-01 08:34:13,275 cleverhans]  Elastic Mean successful distortion: 1.835
+[DEBUG 2017-12-01 08:39:21,417 cleverhans]  Elastic Mean successful distortion: 1.898
+[DEBUG 2017-12-01 08:44:23,064 cleverhans]  Elastic Mean successful distortion: 1.915
+[DEBUG 2017-12-01 08:49:40,877 cleverhans]  Elastic Mean successful distortion: 1.891
+[DEBUG 2017-12-01 08:54:59,559 cleverhans]  Elastic Mean successful distortion: 1.926
+[INFO 2017-12-01 08:59:48,673 cleverhans] Epoch 2 took 1883.18159103 seconds
+[DEBUG 2017-12-01 09:04:53,841 cleverhans]  Elastic Mean successful distortion: 1.771
+[DEBUG 2017-12-01 09:05:39,989 cleverhans]  Elastic Mean successful distortion: 2.021
+[DEBUG 2017-12-01 09:11:05,378 cleverhans]  Elastic Mean successful distortion: 2.005
+[DEBUG 2017-12-01 09:16:26,977 cleverhans]  Elastic Mean successful distortion: 2.038
+[DEBUG 2017-12-01 09:21:51,626 cleverhans]  Elastic Mean successful distortion: 2.047
+[DEBUG 2017-12-01 09:27:23,383 cleverhans]  Elastic Mean successful distortion: 1.972
+[DEBUG 2017-12-01 09:32:54,042 cleverhans]  Elastic Mean successful distortion: 2.028
+[INFO 2017-12-01 09:37:54,769 cleverhans] Epoch 3 took 1970.35066104 seconds
+[DEBUG 2017-12-01 09:43:16,390 cleverhans]  Elastic Mean successful distortion: 1.888
+[DEBUG 2017-12-01 09:44:03,690 cleverhans]  Elastic Mean successful distortion: 2.064
+[DEBUG 2017-12-01 09:49:43,576 cleverhans]  Elastic Mean successful distortion: 2.116
+[DEBUG 2017-12-01 09:55:14,695 cleverhans]  Elastic Mean successful distortion: 2.134
+[DEBUG 2017-12-01 10:00:51,926 cleverhans]  Elastic Mean successful distortion: 2.141
+[DEBUG 2017-12-01 10:06:28,887 cleverhans]  Elastic Mean successful distortion: 2.103
+[DEBUG 2017-12-01 10:12:03,457 cleverhans]  Elastic Mean successful distortion: 2.195
+[INFO 2017-12-01 10:17:12,789 cleverhans] Epoch 4 took 2025.53169322 seconds
+[DEBUG 2017-12-01 10:22:43,429 cleverhans]  Elastic Mean successful distortion: 1.969
+[DEBUG 2017-12-01 10:23:30,484 cleverhans]  Elastic Mean successful distortion: 2.191
+[DEBUG 2017-12-01 10:29:13,074 cleverhans]  Elastic Mean successful distortion: 2.207
+[DEBUG 2017-12-01 10:34:55,673 cleverhans]  Elastic Mean successful distortion: 2.177
+[DEBUG 2017-12-01 10:40:43,935 cleverhans]  Elastic Mean successful distortion: 2.276
+[DEBUG 2017-12-01 10:46:31,448 cleverhans]  Elastic Mean successful distortion: 2.219
+[DEBUG 2017-12-01 10:52:20,150 cleverhans]  Elastic Mean successful distortion: 2.223
+[INFO 2017-12-01 10:57:36,051 cleverhans] Epoch 5 took 2081.92900705 seconds
+[DEBUG 2017-12-01 11:03:15,442 cleverhans]  Elastic Mean successful distortion: 2.036
+[INFO 2017-12-01 11:03:26,115 cleverhans] Completed model training.
+2017-12-01 11:03:26.123730: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:01:00.0, compute capability: 5.2)
+[INFO 2017-12-01 11:03:34,499 cleverhans] Epoch 0 took 1.19522190094 seconds
+[INFO 2017-12-01 11:03:38,464 cleverhans] Epoch 1 took 0.178331136703 seconds
+[INFO 2017-12-01 11:03:42,786 cleverhans] Epoch 2 took 0.176143884659 seconds
+[INFO 2017-12-01 11:03:47,234 cleverhans] Epoch 3 took 0.175805091858 seconds
+[INFO 2017-12-01 11:03:51,625 cleverhans] Epoch 4 took 0.175482034683 seconds
+[INFO 2017-12-01 11:03:56,085 cleverhans] Epoch 5 took 0.177198886871 seconds
+[INFO 2017-12-01 11:04:00,269 cleverhans] Completed model training.
+[DEBUG 2017-12-01 11:08:18,291 cleverhans]  Elastic Mean successful distortion: 1.48
+[DEBUG 2017-12-01 11:09:42,609 cleverhans]  Elastic Mean successful distortion: 0.2534
+[DEBUG 2017-12-01 11:12:25,609 cleverhans]  Elastic Mean successful distortion: 0.4969
+[DEBUG 2017-12-01 11:18:36,480 cleverhans]  Elastic Mean successful distortion: 0.8623
+[DEBUG 2017-12-01 11:22:37,416 cleverhans]  Elastic Mean successful distortion: 1.188
+[DEBUG 2017-12-01 11:27:35,168 cleverhans]  Elastic Mean successful distortion: 1.356
+[DEBUG 2017-12-01 11:32:28,120 cleverhans]  Elastic Mean successful distortion: 1.535
+[INFO 2017-12-01 11:36:42,953 cleverhans] Epoch 0 took 1669.86501598 seconds
+[DEBUG 2017-12-01 11:41:28,549 cleverhans]  Elastic Mean successful distortion: 1.448
+[DEBUG 2017-12-01 11:42:16,342 cleverhans]  Elastic Mean successful distortion: 1.592
+[DEBUG 2017-12-01 11:47:13,987 cleverhans]  Elastic Mean successful distortion: 1.659
+[DEBUG 2017-12-01 11:51:52,386 cleverhans]  Elastic Mean successful distortion: 1.708
+[DEBUG 2017-12-01 11:56:40,406 cleverhans]  Elastic Mean successful distortion: 1.713
+[DEBUG 2017-12-01 12:01:34,467 cleverhans]  Elastic Mean successful distortion: 1.806
+[DEBUG 2017-12-01 12:06:39,401 cleverhans]  Elastic Mean successful distortion: 1.749
+[INFO 2017-12-01 12:11:24,741 cleverhans] Epoch 1 took 1784.05953288 seconds
+[DEBUG 2017-12-01 12:16:25,286 cleverhans]  Elastic Mean successful distortion: 1.574
+[DEBUG 2017-12-01 12:17:14,064 cleverhans]  Elastic Mean successful distortion: 1.747
+[DEBUG 2017-12-01 12:22:19,764 cleverhans]  Elastic Mean successful distortion: 1.763
+[DEBUG 2017-12-01 12:27:30,598 cleverhans]  Elastic Mean successful distortion: 1.892
+[DEBUG 2017-12-01 12:32:32,852 cleverhans]  Elastic Mean successful distortion: 1.91
+[DEBUG 2017-12-01 12:38:01,814 cleverhans]  Elastic Mean successful distortion: 1.931
+[DEBUG 2017-12-01 12:43:42,885 cleverhans]  Elastic Mean successful distortion: 1.942
+[INFO 2017-12-01 12:48:36,805 cleverhans] Epoch 2 took 1918.94328308 seconds
+[DEBUG 2017-12-01 12:53:43,845 cleverhans]  Elastic Mean successful distortion: 1.719
+: 0.0380
+Clean test accuracy on BIM adversarial examples: 0.0350
+Clean test accuracy on EN adversarial examples: 0.0550
+Clean test accuracy on DF adversarial examples: 0.0500
+Clean test accuracy on VAT adversarial examples: 0.7450
+
+Repeating the process, using adversarial training
+
+#####Evaluate trained model#####
+Test accuracy on JSMA adversarial examples: 0.0700
+Test accuracy on FGSM adversarial examples: 0.1940
+Test accuracy on BIM adversarial examples: 0.0780
+Test accuracy on EN adversarial examples: 0.1620
+Test accuracy on DF adversarial examples: 0.1490
+Test accuracy on VAT adversarial examples: 0.6340
+
+Test accuracy on JSMA adversarial examples: 0.0760
+Test accuracy on FGSM adversarial examples: 0.2060
+Test accuracy on BIM adversarial examples: 0.0810
+Test accuracy on EN adversarial examples: 0.1180
+Test accuracy on DF adversarial examples: 0.1100
+Test accuracy on VAT adversarial examples: 0.6790
+
+Test accuracy on JSMA adversarial examples: 0.0820
+Test accuracy on FGSM adversarial examples: 0.2380
+Test accuracy on BIM adversarial examples: 0.0840
+Test accuracy on EN adversarial examples: 0.0970
+Test accuracy on DF adversarial examples: 0.0960
+Test accuracy on VAT adversarial examples: 0.7570
+
+Test accuracy on JSMA adversarial examples: 0.1010
+Test accuracy on FGSM adversarial examples: 0.2930
+Test accuracy on BIM adversarial examples: 0.0860
+Test accuracy on EN adversarial examples: 0.0720
+Test accuracy on DF adversarial examples: 0.0740
+Test accuracy on VAT adversarial examples: 0.7790
+
+Test accuracy on JSMA adversarial examples: 0.0930
+Test accuracy on FGSM adversarial examples: 0.3350
+Test accuracy on BIM adversarial examples: 0.1070
+Test accuracy on EN adversarial examples: 0.0620
+Test accuracy on DF adversarial examples: 0.0610
+Test accuracy on VAT adversarial examples: 0.8070
+
+Test accuracy on JSMA adversarial examples: 0.1020
+Test accuracy on FGSM adversarial examples: 0.3640
+Test accuracy on BIM adversarial examples: 0.1370
+Test accuracy on EN adversarial examples: 0.0530
+Test accuracy on DF adversarial examples: 0.0510
+Test accuracy on VAT adversarial examples: 0.8230
+
+***********************************
+**********Starting Test 6**********
+***********************************
+Extracting /tmp/train-images-idx3-ubyte.gz
+Extracting /tmp/train-labels-idx1-ubyte.gz
+Extracting /tmp/t10k-images-idx3-ubyte.gz
+Extracting /tmp/t10k-labels-idx1-ubyte.gz
+X_train shape: (6000, 28, 28, 1)
+X_test shape: (1000, 28, 28, 1)
+Test accuracy on legitimate examples: 0.7410
+Test accuracy on legitimate examples: 0.8570
+Test accuracy on legitimate examples: 0.8860
+Test accuracy on legitimate examples: 0.9180
+Test accuracy on legitimate examples: 0.9240
+Test accuracy on legitimate examples: 0.9420
+#####Starting attacks on clean model#####
+Clean test accuracy on JSMA adversarial examples: 0.0390
+Clean test accuracy on FGSM adversarial examples: 0.0400
+Clean test accuracy on BIM adversarial examples: 0.0330
+Clean test accuracy on EN adversarial examples: 0.0450
+Clean test accuracy on DF adversarial examples: 0.0430
+Clean test accuracy on VAT adversarial examples: 0.7490
+
+Repeating the process, using adversarial training
+
+#####Evaluate trained model#####
+Test accuracy on JSMA adversarial examples: 0.0710
+Test accuracy on FGSM adversarial examples: 0.1240
+Test accuracy on BIM adversarial examples: 0.0640
+Test accuracy on EN adversarial examples: 0.1700
+Test accuracy on DF adversarial examples: 0.1520
+Test accuracy on VAT adversarial examples: 0.6330
+
+Test accuracy on JSMA adversarial examples: 0.0680
+Test accuracy on FGSM adversarial examples: 0.1720
+Test accuracy on BIM adversarial examples: 0.0690
+Test accuracy on EN adversarial examples: 0.1080
+Test accuracy on DF adversarial examples: 0.1090
+Test accuracy on VAT adversarial examples: 0.7170
+
+Test accuracy on JSMA adversarial examples: 0.0670
+Test accuracy on FGSM adversarial examples: 0.2080
+Test accuracy on BIM adversarial examples: 0.0770
+Test accuracy on EN adversarial examples: 0.0780
+Test accuracy on DF adversarial examples: 0.0800
+Test accuracy on VAT adversarial examples: 0.7[DEBUG 2017-12-01 12:54:32,860 cleverhans]  Elastic Mean successful distortion: 2.004
+[DEBUG 2017-12-01 12:59:59,438 cleverhans]  Elastic Mean successful distortion: 1.982
+[DEBUG 2017-12-01 13:05:38,947 cleverhans]  Elastic Mean successful distortion: 2.041
+[DEBUG 2017-12-01 13:11:30,912 cleverhans]  Elastic Mean successful distortion: 2.038
+[DEBUG 2017-12-01 13:17:37,664 cleverhans]  Elastic Mean successful distortion: 1.974
+[DEBUG 2017-12-01 13:23:28,794 cleverhans]  Elastic Mean successful distortion: 2.04
+[INFO 2017-12-01 13:28:25,532 cleverhans] Epoch 3 took 2069.06641388 seconds
+[DEBUG 2017-12-01 13:33:39,688 cleverhans]  Elastic Mean successful distortion: 1.851
+[DEBUG 2017-12-01 13:34:28,804 cleverhans]  Elastic Mean successful distortion: 2.048
+[DEBUG 2017-12-01 13:39:55,527 cleverhans]  Elastic Mean successful distortion: 2.133
+[DEBUG 2017-12-01 13:45:19,480 cleverhans]  Elastic Mean successful distortion: 2.159
+[DEBUG 2017-12-01 13:50:50,070 cleverhans]  Elastic Mean successful distortion: 2.169
+[DEBUG 2017-12-01 13:56:20,848 cleverhans]  Elastic Mean successful distortion: 2.115
+[DEBUG 2017-12-01 14:01:49,648 cleverhans]  Elastic Mean successful distortion: 2.166
+[INFO 2017-12-01 14:06:54,215 cleverhans] Epoch 4 took 1981.74398208 seconds
+[DEBUG 2017-12-01 14:12:22,067 cleverhans]  Elastic Mean successful distortion: 1.941
+[DEBUG 2017-12-01 14:13:11,210 cleverhans]  Elastic Mean successful distortion: 2.155
+[DEBUG 2017-12-01 14:18:47,779 cleverhans]  Elastic Mean successful distortion: 2.182
+[DEBUG 2017-12-01 14:24:18,258 cleverhans]  Elastic Mean successful distortion: 2.179
+[DEBUG 2017-12-01 14:29:58,867 cleverhans]  Elastic Mean successful distortion: 2.278
+[DEBUG 2017-12-01 14:35:43,807 cleverhans]  Elastic Mean successful distortion: 2.212
+[DEBUG 2017-12-01 14:41:25,211 cleverhans]  Elastic Mean successful distortion: 2.229
+[INFO 2017-12-01 14:46:28,076 cleverhans] Epoch 5 took 2033.16265416 seconds
+[DEBUG 2017-12-01 14:51:59,687 cleverhans]  Elastic Mean successful distortion: 2.017
+[INFO 2017-12-01 14:52:12,432 cleverhans] Completed model training.
+600
+
+Test accuracy on JSMA adversarial examples: 0.0630
+Test accuracy on FGSM adversarial examples: 0.2810
+Test accuracy on BIM adversarial examples: 0.0880
+Test accuracy on EN adversarial examples: 0.0680
+Test accuracy on DF adversarial examples: 0.0610
+Test accuracy on VAT adversarial examples: 0.7870
+
+Test accuracy on JSMA adversarial examples: 0.0770
+Test accuracy on FGSM adversarial examples: 0.3150
+Test accuracy on BIM adversarial examples: 0.1070
+Test accuracy on EN adversarial examples: 0.0620
+Test accuracy on DF adversarial examples: 0.0610
+Test accuracy on VAT adversarial examples: 0.8040
+
+Test accuracy on JSMA adversarial examples: 0.0830
+Test accuracy on FGSM adversarial examples: 0.3570
+Test accuracy on BIM adversarial examples: 0.1310
+Test accuracy on EN adversarial examples: 0.0530
+Test accuracy on DF adversarial examples: 0.0530
+Test accuracy on VAT adversarial examples: 0.8390
+

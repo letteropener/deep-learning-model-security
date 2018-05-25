@@ -1,0 +1,171 @@
+2017-11-08 00:04:00.799890: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-08 00:04:00.799906: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-08 00:04:00.799909: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-08 00:04:00.799912: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-08 00:04:00.799914: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-08 00:04:00.868474: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:893] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2017-11-08 00:04:00.868782: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: GeForce GTX 960
+major: 5 minor: 2 memoryClockRate (GHz) 1.2785
+pciBusID 0000:01:00.0
+Total memory: 1.95GiB
+Free memory: 1.54GiB
+2017-11-08 00:04:00.868791: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 
+2017-11-08 00:04:00.868794: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y 
+2017-11-08 00:04:00.868816: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 960, pci bus id: 0000:01:00.0)
+[INFO 2017-11-08 00:04:02,411 cleverhans] Epoch 0 took 0.600944042206 seconds
+[INFO 2017-11-08 00:04:02,580 cleverhans] Epoch 1 took 0.146148204803 seconds
+[INFO 2017-11-08 00:04:02,744 cleverhans] Epoch 2 took 0.14622592926 seconds
+[INFO 2017-11-08 00:04:02,912 cleverhans] Epoch 3 took 0.147790193558 seconds
+[INFO 2017-11-08 00:04:03,087 cleverhans] Epoch 4 took 0.150527954102 seconds
+[INFO 2017-11-08 00:04:03,263 cleverhans] Epoch 5 took 0.151439905167 seconds
+[INFO 2017-11-08 00:04:03,287 cleverhans] Completed model training.
+[INFO 2017-11-08 00:04:46,475 cleverhans] Epoch 0 took 0.332618951797 seconds
+[INFO 2017-11-08 00:05:41,905 cleverhans] Epoch 1 took 0.318791866302 seconds
+[INFO 2017-11-08 00:06:38,772 cleverhans] Epoch 2 took 0.318845033646 seconds
+[INFO 2017-11-08 00:07:46,306 cleverhans] Epoch 3 took 0.357445001602 seconds
+[INFO 2017-11-08 00:08:54,762 cleverhans] Epoch 4 took 0.328424930573 seconds
+[INFO 2017-11-08 00:10:02,468 cleverhans] Epoch 5 took 0.317073106766 seconds
+[INFO 2017-11-08 00:11:11,260 cleverhans] Completed model training.
+[INFO 2017-11-08 00:21:58,132 cleverhans] Epoch 0 took 646.660370111 seconds
+[INFO 2017-11-08 00:33:42,086 cleverhans] Epoch 1 took 649.110198021 seconds
+[INFO 2017-11-08 00:46:02,442 cleverhans] Epoch 2 took 680.674261808 seconds
+[INFO 2017-11-08 00:58:56,907 cleverhans] Epoch 3 took 713.252444029 seconds
+[INFO 2017-11-08 01:12:12,254 cleverhans] Epoch 4 took 733.36491704 seconds
+[INFO 2017-11-08 01:25:46,391 cleverhans] Epoch 5 took 752.271646023 seconds
+[INFO 2017-11-08 01:26:51,012 cleverhans] Completed model training.
+2017-11-08 01:26:51.019143: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 960, pci bus id: 0000:01:00.0)
+[INFO 2017-11-08 01:26:51,965 cleverhans] Epoch 0 took 0.293380975723 seconds
+[INFO 2017-11-08 01:26:52,326 cleverhans] Epoch 1 took 0.289457798004 seconds
+[INFO 2017-11-08 01:26:52,691 cleverhans] Epoch 2 took 0.283913850784 seconds
+[INFO 2017-11-08 01:26:53,049 cleverhans] Epoch 3 took 0.289433002472 seconds
+[INFO 2017-11-08 01:26:53,417 cleverhans] Epoch 4 took 0.288340091705 seconds
+[INFO 2017-11-08 01:26:53,774 cleverhans] Epoch 5 took 0.280537843704 seconds
+[INFO 2017-11-08 01:26:53,850 cleverhans] Completed model training.
+[INFO 2017-11-08 01:28:19,295 cleverhans] Epoch 0 took 0.661615133286 seconds
+[INFO 2017-11-08 01:30:09,629 cleverhans] Epoch 1 took 0.645518064499 seconds
+[INFO 2017-11-08 01:32:16,843 cleverhans] Epoch 2 took 0.656294107437 seconds
+[INFO 2017-11-08 01:34:23,561 cleverhans] Epoch 3 took 0.648091077805 seconds
+[INFO 2017-11-08 01:36:33,510 cleverhans] Epoch 4 took 0.642405033112 seconds
+[INFO 2017-11-08 01:38:47,346 cleverhans] Epoch 5 took 0.644817829132 seconds
+[INFO 2017-11-08 01:40:58,147 cleverhans] Completed model training.
+[INFO 2017-11-08 02:01:31,593 cleverhans] Epoch 0 took 1233.16143608 seconds
+Extracting /tmp/train-images-idx3-ubyte.gz
+Extracting /tmp/train-labels-idx1-ubyte.gz
+Extracting /tmp/t10k-images-idx3-ubyte.gz
+Extracting /tmp/t10k-labels-idx1-ubyte.gz
+X_train shape: (2000, 28, 28, 1)
+X_test shape: (200, 28, 28, 1)
+evaluate 1
+Test accuracy on legitimate examples: 0.8800
+Test accuracy on legitimate examples: 0.9500
+Test accuracy on legitimate examples: 0.9800
+Test accuracy on legitimate examples: 0.9900
+Test accuracy on legitimate examples: 0.9800
+Test accuracy on legitimate examples: 0.9750
+Test accuracy on FGSM adversarial examples: 0.0250
+
+Test accuracy on JSMA adversarial examples: 0.0150
+
+Repeating the process, using adversarial training
+evaluate 2
+Test accuracy on legitimate examples: 0.8450
+Test accuracy on FGSM adversarial examples: 0.1900
+Test accuracy on JSMA adversarial examples: 0.0450
+Test accuracy on legitimate examples: 0.9200
+Test accuracy on FGSM adversarial examples: 0.2950
+Test accuracy on JSMA adversarial examples: 0.0400
+Test accuracy on legitimate examples: 0.9650
+Test accuracy on FGSM adversarial examples: 0.4650
+Test accuracy on JSMA adversarial examples: 0.0450
+Test accuracy on legitimate examples: 0.9850
+Test accuracy on FGSM adversarial examples: 0.5400
+Test accuracy on JSMA adversarial examples: 0.0850
+Test accuracy on legitimate examples: 0.9750
+Test accuracy on FGSM adversarial examples: 0.6050
+Test accuracy on JSMA adversarial examples: 0.1100
+Test accuracy on legitimate examples: 0.9800
+Test accuracy on FGSM adversarial examples: 0.6850
+Test accuracy on JSMA adversarial examples: 0.1350
+========
+Test accuracy on legitimate examples: 0.8150
+Test accuracy on FGSM adversarial examples: 0.1150
+Test accuracy on JSMA adversarial examples: 0.0600
+Test accuracy on legitimate examples: 0.8600
+Test accuracy on FGSM adversarial examples: 0.1250
+Test accuracy on JSMA adversarial examples: 0.0600
+Test accuracy on legitimate examples: 0.9000
+Test accuracy on FGSM adversarial examples: 0.1500
+Test accuracy on JSMA adversarial examples: 0.0450
+Test accuracy on legitimate examples: 0.9350
+Test accuracy on FGSM adversarial examples: 0.1400
+Test accuracy on JSMA adversarial examples: 0.0650
+Test accuracy on legitimate examples: 0.9450
+Test accuracy on FGSM adversarial examples: 0.0800
+Test accuracy on JSMA adversarial examples: 0.0550
+Test accuracy on legitimate examples: 0.9550
+Test accuracy on FGSM adversarial examples: 0.0750
+Test accuracy on JSMA adversarial examples: 0.0500
+*****************************
+Extracting /tmp/train-images-idx3-ubyte.gz
+Extracting /tmp/train-labels-idx1-ubyte.gz
+Extracting /tmp/t10k-images-idx3-ubyte.gz
+Extracting /tmp/t10k-labels-idx1-ubyte.gz
+X_train shape: (4000, 28, 28, 1)
+X_test shape: (400, 28, 28, 1)
+evaluate 1
+Test accuracy on legitimate examples: 0.9350
+Test accuracy on legitimate examples: 0.9700
+Test accuracy on legitimate examples: 0.9775
+Test accuracy on legitimate examples: 0.9750
+Test accuracy on legitimate examples: 0.9800
+Test accuracy on legitimate examples: 0.9775
+Test accuracy on FGSM adversarial examples: 0.0100
+
+Test accuracy on JSMA adversarial examples: 0.0175
+
+Repeating the process, using adversarial training
+evaluate 2
+Test accuracy on legitimate examples: 0.9025
+Test accuracy on FGSM adversarial examples: 0.2750
+Test accuracy on JSMA adversarial examples: 0.0425
+Test accuracy on legitimate examples: 0.9375
+Test accuracy on FGSM adversarial examples: 0.4850
+Test accuracy on JSMA adversarial examples: 0.0450
+Test accuracy on legitimate examples: 0.9675
+Test accuracy on FGSM adversarial examples: 0.6275
+Test accuracy on JSMA adversarial examples: 0.0750
+Test accuracy on legitimate examples: 0.9500
+Test accuracy on FGSM adversarial examples: 0.6650
+Test accuracy on JSMA adversarial examples: 0.0925
+Test accuracy on legitimate examples: 0.9650
+Test accuracy on FGSM adversarial examples: 0.7525
+Test accuracy on JSMA adversarial examples: 0.1000
+Test accuracy on legitimate examples: 0.9650
+Test accuracy on FGSM adversarial examples: 0.7400
+Test accuracy on JSMA adversarial examples: 0.1475
+========
+Test accuracy on legitimate examples: 0.92[INFO 2017-11-08 02:25:37,916 cleverhans] Epoch 1 took 1337.14783001 seconds
+[INFO 2017-11-08 02:51:37,876 cleverhans] Epoch 2 took 1439.12618518 seconds
+[INFO 2017-11-08 03:18:49,344 cleverhans] Epoch 3 took 1495.62665892 seconds
+[INFO 2017-11-08 03:47:18,849 cleverhans] Epoch 4 took 1573.76599407 seconds
+[INFO 2017-11-08 04:17:50,078 cleverhans] Epoch 5 took 1686.80004597 seconds
+[INFO 2017-11-08 04:20:19,349 cleverhans] Completed model training.
+25
+Test accuracy on FGSM adversarial examples: 0.0500
+Test accuracy on JSMA adversarial examples: 0.0225
+Test accuracy on legitimate examples: 0.9175
+Test accuracy on FGSM adversarial examples: 0.0775
+Test accuracy on JSMA adversarial examples: 0.0575
+Test accuracy on legitimate examples: 0.9475
+Test accuracy on FGSM adversarial examples: 0.0500
+Test accuracy on JSMA adversarial examples: 0.0975
+Test accuracy on legitimate examples: 0.9500
+Test accuracy on FGSM adversarial examples: 0.0525
+Test accuracy on JSMA adversarial examples: 0.0675
+Test accuracy on legitimate examples: 0.9350
+Test accuracy on FGSM adversarial examples: 0.0875
+Test accuracy on JSMA adversarial examples: 0.1325
+Test accuracy on legitimate examples: 0.9500
+Test accuracy on FGSM adversarial examples: 0.0500
+Test accuracy on JSMA adversarial examples: 0.1625

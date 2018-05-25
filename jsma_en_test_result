@@ -1,0 +1,83 @@
+Test accuracy on legitimate test examples: 0.9760000228881835
+Clean test accuracy on JSMA adversarial examples: 0.0120
+Clean test accuracy on FGSM adversarial examples: 0.0200
+Clean test accuracy on BIM adversarial examples: 0.0160
+Clean test accuracy on EN adversarial examples: 0.0180
+Clean test accuracy on DF adversarial examples: 0.0180
+Clean test accuracy on VAT adversarial examples: 0.7890
+
+Legitimate accuracy: 0.9760
+JSMA accuracy: 0.1490
+FGSM accuracy: 0.3970
+Base Iterative accuracy: 0.0660
+Elastic Net accuracy: 0.0440
+DeepFool accuracy: 0.0420
+C & W accuracy: 0.0440
+VAT accuracy: 0.8540
+*******End of Epoch***********
+
+
+Legitimate accuracy: 0.9800
+JSMA accuracy: 0.1510
+FGSM accuracy: 0.4470
+Base Iterative accuracy: 0.0900
+Elastic Net accuracy: 0.0420
+DeepFool accuracy: 0.0400
+C & W accuracy: 0.0420
+VAT accuracy: 0.8640
+*******End of Epoch***********
+
+
+Legitimate accuracy: 0.9820
+JSMA accuracy: 0.1660
+FGSM accuracy: 0.4870
+Base Iterative accuracy: 0.1120
+Elastic Net accuracy: 0.0350
+DeepFool accuracy: 0.0320
+C & W accuracy: 0.0350
+VAT accuracy: 0.8850
+*******End of Epoch***********
+
+
+Legitimate accuracy: 0.9790
+JSMA accuracy: 0.1800
+FGSM accuracy: 0.4990
+Base Iterative accuracy: 0.1240
+Elastic Net accuracy: 0.0440
+DeepFool accuracy: 0.0410
+C & W accuracy: 0.0440
+VAT accuracy: 0.8710
+*******End of Epoch***********
+
+
+Legitimate accuracy: 0.9770
+JSMA accuracy: 0.2460
+FGSM accuracy: 0.5060
+Base Iterative accuracy: 0.1600
+Elastic Net accuracy: 0.0510
+DeepFool accuracy: 0.0480
+C & W accuracy: 0.0540
+VAT accuracy: 0.8440
+*******End of Epoch***********
+
+
+Legitimate accuracy: 0.9780
+JSMA accuracy: 0.2470
+FGSM accuracy: 0.5160
+Base Iterative accuracy: 0.1180
+Elastic Net accuracy: 0.0490
+DeepFool accuracy: 0.0480
+C & W accuracy: 0.0500
+VAT accuracy: 0.8700
+*******End of Epoch***********
+
+
+Legitimate accuracy: 0.9790
+JSMA accuracy: 0.2540
+FGSM accuracy: 0.5270
+Base Iterative accuracy: 0.1020
+Elastic Net accuracy: 0.0550
+DeepFool accuracy: 0.0520
+C & W accuracy: 0.0580
+VAT accuracy: 0.8610
+*******End of Epoch***********
