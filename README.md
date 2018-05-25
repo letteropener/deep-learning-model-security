@@ -2,14 +2,15 @@
 
 Train a model with adversarial samples from multiple attack types.<br>
 
-Goals: <br>
+<b>Goals:</b><br><br>
+
 1)Observe whether this improves robustness to all these attacks (higher accuracy on adversarial examples)<br>
 2)Still maintain good accuracy on legitimate data<br>
 Motivation: all these adversarial attack methods involve perturbing input features, so defending against one type of perturbation may result in better defense against other perturbations as well<br>
 
 Evaluation criteria: a model trained against a single/multiple type(s) of attack evaluated on examples crafted by another attack<br>
 
-Overview of Experiments<br>
+<b>Overview of Experiments</b><br><br>
 
 Rerun some experiments from last time with full MNIST dataset
 
@@ -22,7 +23,7 @@ Combined Enhanced JSMA and ElasticNet
 Combined model with adversarial training on all 6 attack types
 
 
-Conclusions<br>
+<b>Conclusions</b><br><br>
 
 Adversarial training never decreases model test accuracy on legitimate examples
 
